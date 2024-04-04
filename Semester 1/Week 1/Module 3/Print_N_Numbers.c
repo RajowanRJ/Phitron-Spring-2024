@@ -1,4 +1,4 @@
-// Starting with the name of Almighty Allah
+// Starting in the name of Almighty Allah
 #include <stdio.h>
 
 int main ()
@@ -6,9 +6,10 @@ int main ()
     int i = 1, n;
     scanf("%d", &n);
 
-    for (;i <= n; i++)
+    while (i <= n) 
     {
         printf("%d\n", i);
+        i++;
     }
 
     return 0;
