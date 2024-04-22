@@ -4,6 +4,7 @@
 
 int main ()
 {
+    // Method 1 (if the Array capacity Exits it won't be printed)
     char a[100];
     gets(a);
     printf("%s", a);
