@@ -1,22 +1,21 @@
 // Starting in the name of Almighty Allah
 #include <stdio.h>
-#include <string.h>
 
 int main ()
 {
-    char a[100001];
-    scanf("%s", a);
-    char cnt[26] = {0};
+    char c;
+    int cnt[26] = {0};
 
-    for (int i = 0; i < strlen(a); i++)
+    while(scanf("%c", &c) != EOF)
     {
-        int val = a[i] - 'a';
-        cnt[val]++;
+        cnt[c - 'a']++;
     }
-    for (int i = 0; i < 26; i++)
+    for (int i = 'a'; i <= 'z'; i++)
     {
-        if (cnt[i] != 0)
-        printf("%c : %d\n", i + 'a', cnt[i]);
-
-    }   
+        if(cnt[i - 'a'] != 0){
+            printf("%c : %d\n", i, cnt[i - 'a']);
+        }
+        
+    }
+    
 }
