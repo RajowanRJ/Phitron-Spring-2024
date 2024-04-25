@@ -6,8 +6,8 @@ int main ()
     int n, m;
     scanf("%d %d", &n, &m);
     int a[n], cnt[m+1];
-
-    for (int i = 0; i < m+1; i++)
+-
+    for (int i = 0; i <= m+1; i++)
     {
         cnt[i] = 0;
     }
@@ -18,11 +18,9 @@ int main ()
         cnt [a[i]]++;
     }
 
-    for (int i = 0; i < m+1; i++)
+    for (int i = 1; i < m+1; i++)
     {
-        if (cnt[i] != 0)
         printf("%d\n", cnt[i]);
     }
-    
-    
+ 
 }
