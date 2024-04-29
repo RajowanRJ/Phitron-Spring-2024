@@ -1,0 +1,6 @@
+ceil of 5.59 is : 6.00
+floor of 5.59 is : 5.00
+round of 5.59 is : 6.00
+sqrt of 5.59 is : 2.36
+2 Raise to power 5 is : 32.00
+Absolute Value of -25 is : 25
