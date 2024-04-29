@@ -3,33 +3,17 @@
 
 int main ()
 {
-    int n;
+    int n, k = 1;
     scanf("%d", &n);
-    int s = n - 1, k = 1;
 
-    for (int i = 1; i <= (n*2) - 1; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int space = 1; space <= s; space++)
-        {
-            printf(" ");
-        }
-        for (int star = 1; star <= k; star++)
+        for (int j = 1; j <= k; j++)
         {
             printf("*");
         }
-        if(i >= n)
-        {
-            s++;
-            k-=2;
-        }
-        else 
-        {
-            s--;
-            k+=2;
-            
-        }
+        k++;
         printf("\n");
     }
-    
     
 }
