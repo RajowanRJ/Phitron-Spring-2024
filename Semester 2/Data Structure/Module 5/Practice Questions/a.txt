@@ -1,0 +1,2 @@
+Array only store the values we initialize inside it. But Linked list stores a value
+with an address of next element.

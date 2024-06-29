@@ -36,7 +36,7 @@ int diagonal_Sum (int row, int a[row][row])
 int main ()
 {
     int row, col;
-    scanf("%d %d", &row, &col);
+    scanf("%d", &row);
     int a[row][row];
     for (int i = 0; i < row; i++)
     {
