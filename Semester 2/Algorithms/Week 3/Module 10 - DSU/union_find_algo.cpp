@@ -11,13 +11,6 @@ void dsu_initialize(int n)
     par.resize(n, -1);
     gsize.resize(n, 1);
     level.resize(n, 0);
-
-    par[1] = 2;
-    par[2] = 3;
-    par[3] = 4;
-    par[0] = 5;
-    par[5] = 6;
-    par[6] = 7;
 }
 
 int dsu_find(int node)
@@ -58,8 +51,8 @@ void union_by_rank(int node1, int node2)
         par[leader1] = leader2;
     else
     {
-        par[leader2] = leader1;
-        level[leader1]++;
+        par[leader1] = leader2;
+        level[leader2]++;
     }
 }
 
@@ -68,8 +61,14 @@ int main()
     int n = 8;
     dsu_initialize(n);
 
-    union_by_rank(1, 5);
-    cout << level[5] << endl;
+    union_by_rank(1, 2);
+    union_by_rank(2, 3);
+    union_by_rank(4, 5);
+    union_by_rank(5, 6);
+    union_by_rank(1, 4);
+
+    cout << par[1] << endl;
+    cout << dsu_find(4) << endl;
 
     return 0;
 }
