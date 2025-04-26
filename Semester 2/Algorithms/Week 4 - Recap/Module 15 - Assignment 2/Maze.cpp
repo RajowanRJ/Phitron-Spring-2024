@@ -10,7 +10,7 @@ vector<vector<char>> mat;
 vector<vector<bool>> vis;
 vector<vector<ll>> dis;
 vector<vector<pair<ll, ll>>> parent;
-vector<pair<int, int>> d = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
 
 bool valid(int i, int j)
 {
